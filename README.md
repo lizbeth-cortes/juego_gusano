@@ -16,6 +16,8 @@ Este repositorio contiene el código fuente de un clásico juego del gusanito (S
 - **Bootstrap 5**: Componentes y estilos adicionales.
 - **Iconify**: Íconos utilizados en la interfaz.
 
-Si quieres acceder al juego puedes ir al siguiente link: 
+Si quieres acceder al juego puedes ir al siguiente link: [Worm Game](https://wormm-game.netlify.app/)
+
+**NOTA**: Se requiere de un teclado para jugar este juego.
 
 Espero que te haya parecido entretenido y te sirva para aprender un poco más de las tecnologías descritas anteriormente. 
