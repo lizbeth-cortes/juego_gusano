@@ -11,7 +11,7 @@ Este repositorio contiene el código fuente de un clásico juego del gusanito (S
 ## Tecnologías Utilizadas
 
 - **HTML5**: Estructura del juego.
-- **CSS3**: Estilos y diseño responsivo.
+- **CSS3**: Estilos
 - **JavaScript**: Lógica del juego.
 - **Bootstrap 5**: Componentes y estilos adicionales.
 - **Iconify**: Íconos utilizados en la interfaz.
