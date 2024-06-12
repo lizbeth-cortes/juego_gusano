@@ -109,10 +109,6 @@ ul li{
     display: none;
 }
 
-
-
-
-
 /** Tablero del juego **/
 #board, .boardInfo{
     width: 500px;
@@ -142,6 +138,8 @@ ul li{
     display: flex;
     justify-content: center;
     padding: 20px;
+    align-items: center;
+    
 }
 
 
@@ -217,12 +215,12 @@ ul li{
 
 /* Responsivo */
 
-
-@media only screen and (max-width: 460px)  {
+@media only screen and (max-width: 600px)  {
 
     .contenido{
         display: flex;
         flex-direction: column;
+        width: 100vw;
     }
 
     #cardStart{
@@ -252,26 +250,71 @@ ul li{
     }
 
     p.texto, ul li{
-        font-size: 2.5vw; 
-        line-height: 2.5vw; 
+        font-size: 3vw; 
+        line-height: 3vw; 
     }
 
     #start{
         font-size: 3vw; 
-        margin-top: 5vw; 
+    }
+
+    #board, .boardInfo{
+        max-width: 400px;
+    }
+
+    .game-over-card {
+        padding: 10px;
+        margin: 15px 20px;
+    }
+    
+    .game-over-card h2 {
+        font-size: 18px;
+    }
+    
+    .game-over-card p {
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+    
+    .game-over-card button {
+        border: none;
+        padding: 5px 10px;
+        font-size: 12px;
     }
 
 }
 
+@media only screen and (max-width: 400px)  {
+    #board, .boardInfo{
+        max-width: 250px;
+    }
 
+    .game-over-card {
+        padding: 10px;
+        margin: 15px 40px;
+    }
+    
+    .game-over-card h2 {
+        color: #ED6A5A; 
+        font-size: 15px;
+    }
+    
+    .game-over-card p {
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+    
+    .game-over-card button {
+        border: none;
+        padding: 3px 4px;
+        font-size: 10px;
+    }
 
+    #scoreSign{
+        font-size: 15px;
+    }
 
-
-
-
-
-
-
+}
 
 
 
