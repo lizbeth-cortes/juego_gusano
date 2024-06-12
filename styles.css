@@ -215,11 +215,9 @@ ul li{
 
 @media only screen and (max-width: 460px)  {
 
-    body
-
     #cardStart{
         padding: 0; /* Modificado para que sea responsivo */
-        max-width: 70vw; /* Modificado para que sea responsivo */
+        max-width: 100vw; /* Modificado para que sea responsivo */
         display: flex;
         justify-content: center;
         align-items: center;
