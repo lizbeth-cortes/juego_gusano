@@ -214,12 +214,18 @@ ul li{
 
 @media (max-width: 480px) {
 
-    body {
+    #cardStart{
+        padding: 0px;
+        margin: 20px;
+        max-width: 250px;
         display: flex;
         justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        max-width: 250px;
+        padding: 0;
     }
     .titulo p{
         text-align: center;
@@ -239,6 +245,7 @@ ul li{
 
     p.texto, ul li{
         font-size: 10px;
+        line-height: 10px;
     }
 
     #start{
