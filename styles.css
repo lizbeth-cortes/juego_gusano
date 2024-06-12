@@ -215,44 +215,48 @@ ul li{
 
 @media only screen and (max-width: 460px)  {
 
+    body
+
     #cardStart{
-        padding: 0px;
-        max-width: 350px;
+        padding: 0; /* Modificado para que sea responsivo */
+        max-width: 70vw; /* Modificado para que sea responsivo */
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     .card{
         display: flex;
         flex-direction: column;
-        max-width: 350px;
-        padding: 0;
-        margin: 20px;
+        width: 100%;
+        padding: 0; 
+        margin: 5vw; 
         align-self: center;
     }
+
     .titulo p{
         text-align: center;
-        font-size: 16px;
-        line-height: 15px;
+        font-size: 4vw; 
+        line-height: 5vw; 
     }
 
     iconify-icon{
-        font-size: 25px;
+        font-size: 6vw;
         display: flex;
-        color: #F4F1BB;
     }
 
     h5{
-        font-size: 13px;
+        font-size: 3vw; 
     }
 
     p.texto, ul li{
-        font-size: 10px;
-        line-height: 10px;
+        font-size: 2.5vw; 
+        line-height: 2.5vw; 
     }
 
     #start{
-        font-size: 13px;
+        font-size: 3vw; 
+        margin-top: 5vw; 
     }
 
 }
