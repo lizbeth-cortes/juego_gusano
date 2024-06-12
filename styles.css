@@ -282,9 +282,19 @@ ul li{
         font-size: 12px;
     }
 
+    
+    .container-game{
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+    }
+        
+
 }
 
 @media only screen and (max-width: 400px)  {
+
+    
     #board, .boardInfo{
         max-width: 250px;
     }
@@ -313,6 +323,7 @@ ul li{
     #scoreSign{
         font-size: 15px;
     }
+
 
 }
 
