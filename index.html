@@ -16,67 +16,68 @@
 </head>
 
 <body>
-
-    <div id="cardStart" >
-        <div class="card">
-            <div class="card-body">
-                <div class="titulo_principal">
-                    <iconify-icon icon="lucide:worm" class="rotated-icon-right"></iconify-icon>
-                    <div class="titulo">
-                        <p> Juego del gusanito</p>
+    <div class="contenido">
+        <div id="cardStart">
+            <div class="card">
+                <div class="card-body">
+                    <div class="titulo_principal">
+                        <iconify-icon icon="lucide:worm" class="rotated-icon-right"></iconify-icon>
+                        <div class="titulo">
+                            <p> Juego del gusanito</p>
+                        </div>
+                        <iconify-icon icon="lucide:worm" class="rotated-icon-left"></iconify-icon>
                     </div>
-                    <iconify-icon icon="lucide:worm" class="rotated-icon-left"></iconify-icon>
+                    <p class="texto">¡Bienvenid@ a este clásico juego! Controla un gusano que crece al
+                        comer manzanas. Pero cuidado, ¡no choques contra las paredes ni contra ti mismo!
+                    </p>
+                    <h5>¿Cómo jugar?</h5>
+                    <p class="texto">
+                        Haz clic en el botón "Iniciar" para comenzar y usa las flechas del teclado para mover el gusano:
+                    </p>
+                    <ul>
+                        <li>⬆️ Flecha Arriba</li>
+                        <li>⬇️ Flecha Abajo</li>
+                        <li>⬅️ Flecha Izquierda</li>
+                        <li>➡️ Flecha Derecha</li>
+                    </ul>
+                    <h5>Objetivo</h5>
+                    <p class="texto">
+                        El objetivo es comer las manzanas que aparecen aleatoriamente en el tablero. Cada vez que el
+                        gusano
+                        come, aumenta su tamaño y tu puntuación aumenta.
+                    </p>
+                    <h5>Fin del juego</h5>
+                    <p class="texto">El juego termina si el gusano choca con las paredes del tablero o con su propio
+                        cuerpo.</p>
+                    <div class="container-center">
+                        <button id="start">Iniciar</button>
+                    </div>
                 </div>
+            </div>
+        </div>
 
-
-                <p class="texto">¡Bienvenid@ a este clásico juego! Controla un gusano que crece al
-                    comer manzanas. Pero cuidado, ¡no choques contra las paredes ni contra ti mismo!
-                </p>
-
-                <h5>¿Cómo jugar?</h5>
-                <p class="texto">
-                    Haz clic en el botón "Iniciar" para comenzar y usa las flechas del teclado para mover el gusano:
-                    
-                </p>
-                <ul>
-                    <li>⬆️ Flecha Arriba</li>
-                    <li>⬇️ Flecha Abajo</li>
-                    <li>⬅️ Flecha Izquierda</li>
-                    <li>➡️ Flecha Derecha</li>
-                </ul>
-                <h5>Objetivo</h5>
-                <p class="texto">
-                    El objetivo es comer las manzanas que aparecen aleatoriamente en el tablero. Cada vez que el gusano
-                    come, aumenta su tamaño y tu puntuación aumenta.
-                </p>
-                <h5>Fin del juego</h5>
-                <p class="texto">El juego termina si el gusano choca con las paredes del tablero o con su propio cuerpo.</p>
-                <div class="container-center">
-                    <button id="start">Iniciar</button>
+        <div class="container-game" id="containerGame">
+            <div class="game">
+                <div class="boardInfo">
+                    <div id="scoreSign">
+                        Puntuación: <div id="scoreBoard"></div>
+                    </div>
                 </div>
+                <div id="board"></div>
+            </div>
+        </div>
+
+        <div class="game-over-overlay" id="gameOverOverlay">
+            <div class="game-over-card">
+                <h2>¡Juego terminado!</h2>
+                <p>¡Has perdido! Inténtalo de nuevo.</p>
+                <button onclick="restartGame()">Reiniciar</button>
+                <button onclick="leave()">Salir</button>
             </div>
         </div>
     </div>
 
-    <div class="container-game" id="containerGame">
-        <div class="game">
-            <div class="boardInfo">
-                <div id="scoreSign">
-                    Puntuación: <div id="scoreBoard"></div>
-                </div>
-            </div>
-            <div id="board"></div>
-        </div>
-    </div>
 
-    <div class="game-over-overlay" id="gameOverOverlay">
-        <div class="game-over-card">
-            <h2>¡Juego terminado!</h2>
-            <p>¡Has perdido! Inténtalo de nuevo.</p>
-            <button onclick="restartGame()">Reiniciar</button>
-            <button onclick="leave()">Salir</button>
-        </div>
-    </div>
 
     <script src="/script.js"></script>
     <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>

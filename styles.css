@@ -5,14 +5,19 @@
 
 body{
     background-color: #9BC1BC;
+    height:100vh;
 }
 
+.contenido{
+    height: 100vh;
+    align-content: center;
+}
 /** Card de presentación del juego **/
 
 #cardStart{
-    height: 100%;
     padding: 60px;
     align-items: center;
+    display: flex;
 }
 
 .card{
@@ -215,22 +220,21 @@ ul li{
 
 @media only screen and (max-width: 460px)  {
 
-    #cardStart{
-        padding: 0; /* Modificado para que sea responsivo */
-        max-width: 100vw; /* Modificado para que sea responsivo */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .card{
+    .contenido{
         display: flex;
         flex-direction: column;
-        width: 100%;
-        padding: 0; 
-        margin: 5vw; 
-        align-self: center;
     }
+
+    #cardStart{
+        padding: 25px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    .card{
+        padding: 0; 
+    } 
 
     .titulo p{
         text-align: center;
