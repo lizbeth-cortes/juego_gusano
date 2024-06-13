@@ -11,6 +11,7 @@ body{
 .contenido{
     height: 100vh;
     align-content: center;
+    
 }
 /** Card de presentación del juego **/
 
@@ -18,6 +19,7 @@ body{
     padding: 60px;
     align-items: center;
     display: flex;
+
 }
 
 .card{
@@ -70,6 +72,10 @@ h5{
     padding: 15px 0;
     margin: 0;
     text-align: justify;
+}
+
+p.nota{
+    color: #F4F1BB;
 }
 
 ul {
@@ -220,7 +226,7 @@ ul li{
     .contenido{
         display: flex;
         flex-direction: column;
-        width: 100vw;
+        
     }
 
     #cardStart{
@@ -228,6 +234,7 @@ ul li{
         display: flex;
         flex-direction: column;
         align-items: center;
+        flex-grow: 1;
     } 
 
     .card{
@@ -249,7 +256,7 @@ ul li{
         font-size: 3vw; 
     }
 
-    p.texto, ul li{
+    p.texto, ul li, p.nota{
         font-size: 3vw; 
         line-height: 3vw; 
     }
@@ -281,14 +288,6 @@ ul li{
         padding: 5px 10px;
         font-size: 12px;
     }
-
-    
-    .container-game{
-        display: flex;
-        align-items: center;
-        flex-grow: 1;
-    }
-        
 
 }
 
@@ -326,10 +325,4 @@ ul li{
 
 
 }
-
-
-
-
-
-
 
